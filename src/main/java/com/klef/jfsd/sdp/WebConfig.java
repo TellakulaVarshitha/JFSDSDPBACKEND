@@ -13,7 +13,7 @@ public class WebConfig implements WebMvcConfigurer
     public void addCorsMappings(CorsRegistry registry) 
     {
     	registry.addMapping("/**") // Allow CORS 
-                .allowedOrigins("http://localhost:3000")
+                .allowedOrigins("https://onlineconsultations.netlify.app")
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*")
                 .allowCredentials(true);
