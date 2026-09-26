@@ -53,8 +53,8 @@ public class PatientServiceImpl implements PatientService {
 		return patientRepository.findById(pid).get();
 	}
 	@Override
-	public List<LocalTime> getAppointmentsByDateAndTime(int did,String date) {
-		return appointmentRepository.viewAppointmentsByDateandTime(did,date, "Registered");
+	public List<String> getAppointmentsByDateAndTime(int did,String date) {
+		return appointmentRepository.viewAppointmentsByDateandTime(did,date, "Accepted");
 	}
 	@Override
 	public String getDoctorName(int id) {

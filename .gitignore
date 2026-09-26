@@ -1,3 +1,18 @@
+# Spring Boot
+src/main/resources/application.properties
+
+# Build files
+target/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar

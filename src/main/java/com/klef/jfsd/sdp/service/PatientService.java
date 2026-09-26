@@ -15,7 +15,7 @@ public interface PatientService {
 	public String deleteAccount(int pid);
 	
 	public Patient viewPatientById(int pid);
-	public List<LocalTime> getAppointmentsByDateAndTime(int did,String date);
+	public List<String> getAppointmentsByDateAndTime(int did,String date);
 	
 	public String getDoctorName(int id);
 	public void cancelAppointment(int aid);

@@ -22,7 +22,7 @@ public interface AppointmentRepository extends JpaRepository<Appointment, Intege
 	 public List<Appointment> findByDoctorid(int doctorid);
 	 
 	 @Query("select a.time from Appointment a where a.doctorid=?1 and a.date=?2 and a.status=?3")
-	public List<LocalTime> viewAppointmentsByDateandTime(int did,String date,String status);
+	public List<String> viewAppointmentsByDateandTime(int did,String date,String status);
 	 
 	 @Query("select d.name from Doctor d where d.id=?1")
 		public String getDoctorName(int id);

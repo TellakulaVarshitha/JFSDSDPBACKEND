@@ -129,10 +129,10 @@ public class PatientController
      
      @GetMapping("/viewappointmenttimings")
      @ResponseBody
-     public List<LocalTime> viewAppointmentTimings(@RequestParam("did") int did,@RequestParam("date") String date)
+     public List<String> viewAppointmentTimings(@RequestParam("did") int did,@RequestParam("date") String date)
      {
     	 
-    	
+    	System.out.println(patientService.getAppointmentsByDateAndTime(did, date));
     	 return patientService.getAppointmentsByDateAndTime(did, date);
      }
 

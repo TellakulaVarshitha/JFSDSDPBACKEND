@@ -156,7 +156,7 @@ public class DoctorController
     @PostMapping("/updateappointmentstatus")
     @ResponseBody
     public String updateAppointmentStatus(@RequestParam("id") int id,@RequestParam("status") String status)
-    {
+    {    
     	 doctorService.updateAppointmentStatus(id, status);
     	 return "updated";
     	 
